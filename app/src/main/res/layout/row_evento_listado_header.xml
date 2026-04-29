@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:background="@color/listadoHeader">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:layout_marginLeft="10dp"
+        android:text="Nombre"
+        android:id="@+id/head_nombre_usuario"
+        android:focusable="false"
+        android:gravity="center"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium">
+    </TextView>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:text="Asistirá"
+        android:id="@+id/head_asistira"
+        android:focusable="false"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:gravity="center">
+    </TextView>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:layout_marginRight="5dp"
+        android:id="@+id/head_tipo_habilitada"
+        android:text="Invitar"
+        android:gravity="center"
+        android:focusable="false"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium">
+    </TextView>
+</LinearLayout>

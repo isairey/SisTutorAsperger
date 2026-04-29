@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listaImagenAvatar"
+        android:src="@drawable/ic_action_go_to_today"
+        android:clickable="true"/>
+
+        <TextView android:id="@+id/listaEventoNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:text="Texto "
+            android:layout_marginStart="47dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView android:id="@+id/listaEventosDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:text="Descripcion"
+            android:layout_below="@+id/listaEventoNombre"
+            android:layout_alignStart="@+id/listaEventoNombre"
+            android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>
+

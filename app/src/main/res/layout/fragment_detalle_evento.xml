@@ -1,0 +1,195 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".presentacion.vista.evento.FragmentDetalleEvento"
+    android:background="#ffffff">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Evento X"
+        android:id="@+id/DetalleNombreEvento"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="6"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+
+                    <!-- Nombre Evento -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nombre Evento"
+                        android:id="@+id/editTextNombreEvento"/>
+                    <!-- Fin Nombre Evento-->
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!-- Hora evento -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Hora Evento"
+                        android:inputType="datetime"
+                        android:id="@+id/editTextHoraEvento" />
+                    </android.support.design.widget.TextInputLayout>
+                    <!-- Fin Hora evento -->
+
+                    <!-- Hora alarma -->
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="datetime"
+                        android:paddingTop="2dp"
+                        android:hint="Hora Alarma"
+                        android:id="@+id/editTextHoraAlarma"/>
+                    </android.support.design.widget.TextInputLayout>
+                    <!-- Fin  Hora alarma -->
+
+            </LinearLayout>
+
+
+
+            <!-- Usuarios evento -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:text="Usuarios: "
+                android:gravity="center"
+                android:id="@+id/textView8"
+                android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <ListView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/listado"
+                android:choiceMode="singleChoice"
+                android:id="@+id/listViewUsuariosEvento" />
+
+        </LinearLayout>
+
+            <!-- Fin Usuarios evento -->
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.175"
+                android:orientation="vertical">
+                <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                    android:id="@+id/calendar_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:mcv_arrowColor="@color/colorPrimary"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    app:mcv_showOtherDates="all"
+                    app:mcv_selectionColor="@color/colorAccent"
+                    app:mcv_tileSize="60dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+        </LinearLayout>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:id="@+id/botonCancelarEvento"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+               />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+        </LinearLayout>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Guardar"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:id="@+id/botonAccionEvento"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

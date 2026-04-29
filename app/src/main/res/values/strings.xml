@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">AS Tutor</string>
+    <string name="app_header">AS</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_detalle_activity">Detalle_activity</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- Lista de titulos de navegacion-->
+    <string-array name="nav_options">
+        <item>Usuarios</item>
+        <item>Eventos</item>
+        <item>Mi perfil</item>
+        <item>Ayuda</item>
+    </string-array>
+    <!-- Lista de iconos de navegacion-->
+    <array name="navigation_iconos">
+        <item>@drawable/ic_action_group</item>
+        <item>@drawable/ic_action_go_to_today_dark</item>
+        <item>@drawable/ic_action_settings</item>
+        <item>@drawable/ic_action_about</item>
+    </array>
+    <string name="title_activity_bienvenido">Bienvenido</string>
+    <string name="title_activity_registro">Registro</string>
+
+    <!-- FAQs-->
+    <string-array name="faq">
+
+        <!--0 crear usuario-->
+        <item>¿Cómo añado un nuevo usuario?</item>
+
+        <!--1 crear tarea-->
+        <item>¿Cómo creo una tarea para un usuario?</item>
+
+        <!--2 editar/deshabilitar tarea-->
+        <item>¿Cómo edito/deshabilito/elimino una tarea?</item>
+
+        <!--3 sincronizar-->
+        <item>¿Cómo sincronizar la información con un usuario?</item>
+
+        <!--4 editar usuario-->
+        <item>¿Cómo editar la información de un usuario?</item>
+
+        <!--5 reto usuario-->
+        <item>¿Cómo gestionar el reto de un usuario?</item>
+
+        <!--6 ver eventos usuario-->
+        <item>¿Cómo veo los eventos a los que un usuario ha sido invitado?</item>
+
+        <!--7 enviar informe-->
+        <item>¿Cómo envío el informe de un usuario?</item>
+
+        <!--8 nuevo evento-->
+        <item>¿Cómo añado un nuevo evento?</item>
+
+        <!--9 invitar/desinvitar evento-->
+        <item>Enviar/cancelar invitación a un usuario a un evento</item>
+
+        <!--10 editar/eliminar evento-->
+        <item>¿Cómo edito/elimino un evento?</item>
+
+        <!--11 cambiar contraseña, info-->
+        <item>¿Cómo cambio mi contraseña/datos personales?</item>
+
+    </string-array>
+
+    <!-- Respuestas FAQs-->
+    <string-array name="respuestasFaq">
+        <!--0 crear usuario-->
+        <item>En la sección USUARIOS debes pulsar sobre el botón rosa que aparece en la parte
+        inferior del listado. Entonces se abrirá una ventana donde rellenar todos los campos de tu nuevo
+        usuario. Cuando termines, pulsa el botón ACEPTAR para guardar los cambios.
+            ¡Ya tienes un nuevo usuario!</item>
+
+        <!--1 crear tarea-->
+        <item>En la sección USUARIO debes seleccionar el usuario al que quieras añadir la tarea.
+        Aparecerá un icono de menú en la parte superior derecha de la pantalla. Selecciona y elige
+        la opción "TAREAS". En esta pantalla podrás ver todas las tareas de ese usuario. En la parte
+        inferior derecha haz click sobre el botón rosa "+" y rellena los detalles de tu tarea. ¡Conseguido!</item>
+
+        <!--2 editar/deshabilitar tarea-->
+        <item>En la sección USUARIO debes seleccionar el usuario del que quieres cambiar la tarea.
+            Aparecerá un icono de menú en la parte superior derecha de la pantalla. Selecciona y elige
+        la opción "TAREAS". En esta pantalla podrás ver todas las tareas de ese usuario. A continuación,
+        selecciona la tarea que te interese, aparecerá un cuadro de diálogo que te ofrecerá la opción
+        que te interese.</item>
+
+        <!--3 sincronizar-->
+        <item>En la sección USUARIO debes seleccionar el usuario con el que quieres sincronizar. Es
+        importante contar con que debes estar fisicamente con ese usuario y ambos debéis conectar
+        vuestros dispositivos a la misma red WiFi. Si cumples estas condiciones pulsa el icono de
+        sincronización de la barra superior. Aparecerá una ventana emergente que desaparecerá cuando
+        la sincronización se haya ejecutado correctamente.</item>
+
+        <!--4 editar usuario-->
+        <item>En la sección USUARIO debes seleccionar el usuario que quieras editar. Ahí puedes ver
+        toda la información de ese usuario y todos los campos son editables excepto el perfil que
+        elegiste al crearlo y el código de sincronización que se generó automaticamente cuando lo creaste.
+        Después de hacer cualquier cambio no olvides pulsar el icono de la parte inferior derecha para
+        guardar.</item>
+
+        <!--5 reto usuario-->
+        <item>En la sección USUARIO debes seleccionar el usuario al que quieres añadir, ver o eliminar el reto.
+            Un reto es un desafío que se le propone al alumno y que debe conseguir realizar 30 veces. Tan
+            solo puede responder SI (+1) o NO (-1). Puedes motivarle añadiendo un premio. Para añadir, ver
+            o eliminar el reto debes pulsar sobre el icono de menú de usuario de la parte superior y a continuación
+            seleccionar "RETO". En esta versión solamente puedes asignar un reto a cada usuario.
+        </item>
+
+        <!--6 ver eventos usuario-->
+        <item>En la sección EVENTOS debes seleccionar el evento al cual quieres invitar al usuario.
+            A continuación podrás ver los detalles del mismo y en concreto una lista con todos los
+        usuarios de tu sistema. Si seleccionas la fila del usuario en cuestión se marcará la casilla
+        de la columna de la izquierda lo cual te indica que tu usuario está invitado.</item>
+
+        <!--7 enviar informe-->
+        <item>En la sección USUARIO debes seleccionar el usuario del que quieras enviar el informe.
+        En el menú de la parte superior derecha tienes la opción "Enviar correo". Al seleccionarla
+        se te abrirá tu aplicación de correo con uno redactado por defecto con un PDF adjunto con la
+        informacón de tu alumno para que se lo envíes a quien quieras.</item>
+
+        <!--8 nuevo evento-->
+        <item>En la sección EVENTOS debes pulsar sobre el botón rosa "+" que aparece en la parte inferior del listado.
+            Después debes rellenar los campos y seleccionar los usuarios a los que quieres invitar al evento</item>
+
+        <!--9 invitar/desinvitar evento-->
+        <item>En la sección EVENTOS debes seleccionar el evento al cual quieres invitar al usuario.
+            A continuación podrás ver los detalles del mismo y en concreto una lista con todos los
+        usuarios de tu sistema. Si seleccionas la fila del usuario en cuestión se marcará la casilla
+        de la columna de la izquierda lo cual te indica que tu usuario está invitado.</item>
+
+        <!--10 editar/eliminar evento-->
+       <item>En la sección EVENTOS debes seleccionar el evento que quieres editar/eliminar.
+            A continuación podrás ver los detalles del evento y editar sus campos ó eliminar el evento pulsando
+            sobre la papelera en la esquina superior derecha.</item>
+
+        <!--11 cambiar contraseña, info-->
+       <item>Para cambiar tus datos personales/contraseña debes seleccionar la pestaña "Mi perfil"
+           en el menú que aparece en la parte superior izquierda. A continuación podrás cambiar
+           tu información, tu pregunta y respuesta de seguridad y tu contraseña de acceso a la aplicación</item>
+
+    </string-array>
+
+</resources>

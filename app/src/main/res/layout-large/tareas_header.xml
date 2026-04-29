@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <!-- Titulo de la tarea -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:paddingLeft="20dp"
+        android:id="@+id/nombreTarea"
+        android:gravity="center_vertical"
+        android:text="Texto alarma"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:textColor="#ffffff">
+    </TextView>
+
+    <!-- Hora de la alarma -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.2"
+        android:id="@+id/horaAlarma"
+        android:gravity="center"
+        android:text="Hora alarma"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:textColor="#ffffff">
+    </TextView>
+
+    <!-- Pregunta que se realiza al usuario -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:paddingLeft="10dp"
+        android:id="@+id/preguntaTarea"
+        android:gravity="center_vertical"
+        android:text="Texto pregunta"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:textColor="#ffffff">
+    </TextView>
+
+    <!-- Hora a la que se pregunta -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.2"
+        android:id="@+id/horaPregunta"
+        android:gravity="center"
+        android:text="Hora pregunta"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:textColor="#ffffff">
+    </TextView>
+
+    <!-- Numero de veces que el usuario respondio "si" -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/si"
+        android:gravity="center"
+        android:text="Si"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:textColor="#ffffff">
+    </TextView>
+
+    <!-- Numero de veces que el usuario respondio "no" -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/no"
+        android:gravity="center"
+        android:text="No"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:textColor="#ffffff">
+    </TextView>
+
+    <!-- Balance entre respuestas "si" y "no" -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/total"
+        android:gravity="center"
+        android:text="Total"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:textColor="#ffffff">
+    </TextView>
+
+    <!-- Frecuencia con la que se recuerda la tarea -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:id="@+id/frecuencia"
+        android:gravity="center"
+        android:text="Frecuencia"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:textColor="#ffffff">
+    </TextView>
+
+    <!-- Habilitada / deshabilitada -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:id="@+id/habilitada"
+        android:gravity="center"
+        android:text="Habilitada"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:textColor="#ffffff">
+    </TextView>
+
+</LinearLayout>

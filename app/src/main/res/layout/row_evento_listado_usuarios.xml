@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:paddingLeft="10dp"
+        android:id="@+id/eventoNombreUsuario"
+        android:focusable="false"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:gravity="center_vertical">
+    </TextView>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:paddingLeft="10dp"
+        android:id="@+id/eventoUsuarioAsistira"
+        android:focusable="false"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:gravity="center_vertical">
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/chkItem"
+        android:visibility="visible"
+        android:paddingRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:clickable="false" />
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/ tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/eliminarReto"
+        android:icon="@drawable/ic_action_discard_dark"
+        android:orderInCategory="10"
+        app:showAsAction="ifRoom|withText"
+        android:title=""/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="101"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_more_vert_white_48dp"
+        android:title="@string/action_settings">
+
+        <menu>
+            <item android:id="@+id/usuario"
+                android:icon="@drawable/ic_action_person"
+                app:showAsAction="ifRoom"
+                android:title="Perfil"/>
+
+            <item android:id="@+id/tareasUsuario"
+                android:icon="@drawable/ic_action_event"
+                app:showAsAction="ifRoom"
+                android:title="Tareas" />
+
+            <item android:id="@+id/retoUsuario"
+                android:icon="@drawable/ic_flag_gray_48dp"
+                app:showAsAction="ifRoom"
+                android:title="Reto" />
+
+            <item android:id="@+id/eventosUsuario"
+                android:icon="@drawable/ic_action_go_to_today"
+                app:showAsAction="ifRoom"
+                android:title="Evento" />
+
+            <item
+                android:id="@+id/enviarCorreo"
+                android:icon="@drawable/ic_send_gray_48dp"
+                android:orderInCategory="10"
+                app:showAsAction="ifRoom"
+                android:title="Enviar informe"/>
+
+        </menu>
+
+    </item>
+
+
+
+</menu>

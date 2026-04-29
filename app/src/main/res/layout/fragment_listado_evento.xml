@@ -1,0 +1,32 @@
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentacion.vista.evento.FragmentListadoEvento"
+    android:orientation="horizontal">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_blank_fragment"
+        android:choiceMode="singleChoice"
+        android:id="@+id/ListadoEventos"
+        android:paddingTop="12dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="134dp"
+        android:src="@drawable/ic_add_white_48dp"
+        android:layout_marginTop="50dp"
+        android:onClick="nuevoEvento"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="right|bottom" />
+
+    </FrameLayout>
+
+</FrameLayout >
