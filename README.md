@@ -95,29 +95,7 @@ El sistema está desarrollado bajo una **arquitectura multicapa**, lo que permit
 
 ---
 
-## 🖼️ Arquitectura general
 
-
-  <img src="https://s11.postimg.org/w1rdtpeib/esquema_general_intro.png" />
-
-
----
-
-## 🏗️ Arquitectura multicapa
-
-<p align="center">
-  <img src="https://s11.postimg.org/pt6204gxf/arq_multicapa.png" />
-</p>
-
----
-
-## 🔄 Flujo del sistema
-
-<p align="center">
-  <img src="https://s11.postimg.org/sjfdxbdmb/arq_multi_AS.png" />
-</p>
-
----
 
 ## 📊 Modelo de datos (App Tutor)
 
