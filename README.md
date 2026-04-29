@@ -97,9 +97,9 @@ El sistema está desarrollado bajo una **arquitectura multicapa**, lo que permit
 
 ## 🖼️ Arquitectura general
 
-<p align="center">
+
   <img src="https://s11.postimg.org/w1rdtpeib/esquema_general_intro.png" />
-</p>
+
 
 ---
 
