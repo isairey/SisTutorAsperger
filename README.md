@@ -1,25 +1,163 @@
-#Desarrollo de un sistema informático para ayudar a adultos con síndrome de Asperger
+# 🧠📱 Sistema de Apoyo para Personas con Síndrome de Asperger
 
-Este proyecto presenta un sistema informático para ayudar a personas Asperger, que tienen problemas para recordar actividades y objetos básicos, y a sus profesores especialistas. Se ha decidido llamarlo AS (Asperger). Se compone de dos aplicaciones Android: la aplicación tutor y la aplicación usuario. La primera es para que los profesionales, desde su propia tablet, puedan
-centralizar y gestionar toda la información de sus alumnos creando tareas, retos y eventos específicos para cada uno. La segunda es para los móviles de las personas Asperger, se encarga de recordarles los sucesos que su tutor les ha asignado y después les pregunta si los realizaron correctamente. Ambas interfaces siguen los principios de claridad y sencillez, además la aplicación usuario es totalmente personalizable para que una persona Asperger de cualquier edad pueda interactuar y motivarse con ella.
+Plataforma móvil diseñada para apoyar a personas con **síndrome de Asperger**, facilitando la gestión de actividades diarias, el seguimiento de tareas y la interacción con tutores mediante un sistema intuitivo y accesible.
 
-La información es almacenada localmente en cada dispositivo. Ambas aplicaciones se comunican para sincronizar los datos mediante sockets usando la tecnología WIFI. Esto permite tener un seguimiento del progreso de cada alumno desde la aplicación tutor.
+---
 
+## 📌 Descripción
 
-![Alt text](https://s11.postimg.org/w1rdtpeib/esquema_general_intro.png?raw=true "Esquema general")
+Este proyecto presenta un sistema informático enfocado en mejorar la **organización, autonomía y seguimiento** de personas con síndrome de Asperger.
 
-Para desarrollar las aplicaciones tutor y usuario se ha decidido utilizar la arquitectura multicapa ya que nos proporciona integración y reusabilidad, encapsulación, distribución, escalabilidad, manejabilidad, mejora el rendimiento y mejora la fiabilidad.
+El sistema está compuesto por dos aplicaciones móviles Android:
 
-![Alt text](https://s11.postimg.org/pt6204gxf/arq_multicapa.png?raw=true )
+- 👨‍🏫 **App Tutor** → Para profesionales o docentes  
+- 👤 **App Usuario** → Para personas con Asperger  
 
-En el sistema que hemos desarrollado, la arquitectura multicapa utiliza patrones de Ingeniería de Software para conseguir la separación de las capas de presentación, negocio e integración. Los patrones empleados son: singleton, dispatcher, command, factoría abstracta, servicio de aplicación, DAO y data transfer object (DTO).
-A grandes rasgos sería un esquema como el siguiente: 
+Ambas aplicaciones trabajan de forma sincronizada, permitiendo asignar tareas, dar seguimiento al progreso y reforzar hábitos mediante recordatorios y retroalimentación.
 
-![Alt text](https://s11.postimg.org/sjfdxbdmb/arq_multi_AS.png?raw=true )
+---
 
-# AS_TUTOR
-El objetivo de esta aplicación Android es que el profesor pueda tener centralizada toda la información de sus alumnos, gestionar los sucesos de cada uno de ellos (tareas, eventos y retos) y disponer de un seguimiento preciso de su evolución. La aplicación se ha diseñado utilizando el patrón Material Design de Google
+## 🎯 Objetivo
 
+Brindar una herramienta tecnológica que facilite:
 
-Su modelo de dominio sería el siguiente: 
-![Alt text](https://s11.postimg.org/mxsyt9cxf/as_tutor_bdd.png?raw=true "BDD Tutor")
+- 🧩 La organización de actividades diarias  
+- ⏰ Recordatorios de tareas importantes  
+- 📊 Seguimiento del progreso del usuario  
+- 🤝 Comunicación entre tutor y usuario  
+
+---
+
+## 🚀 Características
+
+### 👨‍🏫 Aplicación Tutor
+- Gestión de alumnos  
+- Creación de tareas, eventos y retos  
+- Seguimiento del progreso  
+- Administración centralizada  
+
+### 👤 Aplicación Usuario
+- Recordatorios personalizados  
+- Interfaz simple y accesible  
+- Confirmación de tareas realizadas  
+- Personalización según edad y necesidades  
+
+---
+
+## 🧠 Enfoque de Diseño
+
+- 🎨 Interfaces basadas en **claridad y simplicidad**
+- 🧩 Adaptabilidad para diferentes edades
+- 💡 Enfoque centrado en el usuario
+- 📱 Diseño basado en **Material Design**
+
+---
+
+## 🔄 Comunicación del Sistema
+
+- 📡 Sincronización mediante **Sockets**
+- 📶 Conexión vía **WiFi**
+- 💾 Almacenamiento local en cada dispositivo
+
+Esto permite mantener un sistema funcional incluso sin conexión a internet, garantizando disponibilidad y eficiencia.
+
+---
+
+## 🏗️ Arquitectura
+
+El sistema está desarrollado bajo una **arquitectura multicapa**, lo que permite:
+
+- 🔄 Reusabilidad  
+- ⚡ Escalabilidad  
+- 🔐 Encapsulación  
+- 📊 Mejor rendimiento  
+- 🧩 Separación de responsabilidades  
+
+---
+
+### 🧩 Capas del sistema
+
+- 🎨 Presentación  
+- ⚙️ Lógica de negocio  
+- 🔗 Integración  
+
+---
+
+### 📐 Patrones de diseño utilizados
+
+- Singleton  
+- Dispatcher  
+- Command  
+- Factoría Abstracta  
+- Servicio de Aplicación  
+- DAO (Data Access Object)  
+- DTO (Data Transfer Object)  
+
+---
+
+## 🖼️ Arquitectura general
+
+<p align="center">
+  <img src="https://s11.postimg.org/w1rdtpeib/esquema_general_intro.png" />
+</p>
+
+---
+
+## 🏗️ Arquitectura multicapa
+
+<p align="center">
+  <img src="https://s11.postimg.org/pt6204gxf/arq_multicapa.png" />
+</p>
+
+---
+
+## 🔄 Flujo del sistema
+
+<p align="center">
+  <img src="https://s11.postimg.org/sjfdxbdmb/arq_multi_AS.png" />
+</p>
+
+---
+
+## 📊 Modelo de datos (App Tutor)
+
+<p align="center">
+  <img src="https://s11.postimg.org/mxsyt9cxf/as_tutor_bdd.png" />
+</p>
+
+---
+
+## 💡 Funcionamiento
+
+1. 👨‍🏫 El tutor crea tareas, eventos o retos  
+2. 📤 Se sincronizan con el dispositivo del usuario  
+3. 🔔 El usuario recibe recordatorios  
+4. ✅ Confirma la realización de actividades  
+5. 📊 El tutor visualiza el progreso  
+
+---
+
+## 📈 Beneficios
+
+- 🧠 Mejora la autonomía del usuario  
+- ⏰ Refuerza hábitos y rutinas  
+- 📊 Facilita el seguimiento educativo  
+- 🤝 Fortalece la relación tutor–usuario  
+
+---
+
+## ⚠️ Nota
+
+Este sistema está diseñado como una herramienta de apoyo y **no sustituye el acompañamiento profesional especializado**.
+
+---
+
+## 📄 Licencia
+
+Proyecto de uso educativo y académico.
+
+---
+
+## 👨‍💻 Autor
+
+Adaptado y presentado por **Isai Reyes Peña**
